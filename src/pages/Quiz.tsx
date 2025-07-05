@@ -106,7 +106,7 @@ export default function Quiz() {
               <div
                 key={id}
                 onClick={() => handleClick(choice.text)}
-                className="flex flex-col justify-between items-center cursor-pointer hover:opacity-80 transition-all"
+                className="flex flex-col justify-start items-center cursor-pointer hover:opacity-80 transition-all"
               >
                 <img
                   src={choice.img}
