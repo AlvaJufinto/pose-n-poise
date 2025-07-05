@@ -70,7 +70,7 @@ export default function Quiz() {
               <img
                 src={finalResult.img}
                 alt={finalResult.title}
-                className="h-100"
+                className="h-100 object-cover"
               />
             )}
             <h1 className="font-primary text-4xl">{finalResult?.title}</h1>
@@ -108,7 +108,11 @@ export default function Quiz() {
                 onClick={() => handleClick(choice.text)}
                 className="flex flex-col justify-between items-center cursor-pointer hover:opacity-80 transition-all"
               >
-                <img src={choice.img} className="h-72" alt={choice.text} />
+                <img
+                  src={choice.img}
+                  className="h-72 object-cover"
+                  alt={choice.text}
+                />
                 <h1 className="font-tertiary text-4xl text-center mt-4">
                   {choice.text}
                 </h1>
