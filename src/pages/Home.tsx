@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-import Logo from '../assets/icon/logo.svg';
+import Logo from '../assets/icon/logo.jpeg';
 import Banner from '../assets/img/main-banner.png';
 import Wrapper from '../partials/Wrapper';
 
@@ -15,7 +15,7 @@ const Home = () => {
       <div className="flex flex-col items-center">
         <motion.img
           src={Logo}
-          className="border h-46 rounded-full"
+          className="border rounded-full size-46 object-cover"
           alt="logo"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -30,7 +30,7 @@ const Home = () => {
           Pose & Poise
         </motion.h1>
         <motion.h2
-          className="font-primary text-2xl"
+          className="font-primary text-2xl text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}

@@ -92,13 +92,13 @@ export default function Quiz() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.4 }}
-          className="flex flex-col items-center gap-10"
+          className="flex flex-col items-center gap-5"
         >
           <h1 className="text-2xl text-gold font-secondary">Pose & Poise</h1>
-          <h1 className="font-primary text-3xl text-center w-3/4">
+          <h1 className="font-primary text-xl text-center w-3/4">
             {current.top}
           </h1>
-          <h1 className="font-primary text-3xl text-center w-3/4">
+          <h1 className="font-primary text-xl text-center w-3/4">
             {current.question}
           </h1>
           <div className="grid grid-cols-2 gap-8">
@@ -110,10 +110,10 @@ export default function Quiz() {
               >
                 <img
                   src={choice.img}
-                  className="h-72 object-cover"
+                  className="h-52 object-cover"
                   alt={choice.text}
                 />
-                <h1 className="font-tertiary text-4xl text-center mt-4">
+                <h1 className="font-tertiary text-3xl text-center mt-4">
                   {choice.text}
                 </h1>
               </div>
