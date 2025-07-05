@@ -15,14 +15,14 @@ const Home = () => {
       <div className="flex flex-col items-center">
         <motion.img
           src={Logo}
-          className="border rounded-full size-46 object-cover"
+          className="border rounded-full size-32 object-cover"
           alt="logo"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
         />
         <motion.h1
-          className="font-secondary text-4xl mt-8"
+          className="font-secondary text-2xl mt-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -30,7 +30,7 @@ const Home = () => {
           Pose & Poise
         </motion.h1>
         <motion.h2
-          className="font-primary text-2xl text-center"
+          className="font-primary text-xl text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
@@ -41,13 +41,13 @@ const Home = () => {
 
       <MotionLink
         to="/quiz"
-        className="space-y-4 block mt-8"
+        className="block mt-8"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.8 }}
         whileHover={{ scale: 1.02 }}
       >
-        <h2 className="font-primary text-2xl">What Sport Are You</h2>
+        <h2 className="font-primary text-xl">What Sport Are You</h2>
         <img src={Banner} className="w-full" alt="banner" />
       </MotionLink>
 
@@ -64,7 +64,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
       >
-        <h2 className="font-primary text-2xl">More Info!</h2>
+        <h2 className="font-primary text-xl">More Info!</h2>
         <motion.div
           className="bg-[#8e959e] font-primary text-4xl h-32 ml-10 pt-4 pl-4"
           whileHover={{ scale: 1.02 }}

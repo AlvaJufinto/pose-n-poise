@@ -70,11 +70,11 @@ export default function Quiz() {
               <img
                 src={finalResult.img}
                 alt={finalResult.title}
-                className="h-100 object-cover"
+                className="h-82 object-cover"
               />
             )}
             <h1 className="font-primary text-4xl">{finalResult?.title}</h1>
-            <p className="text-center font-primary text-2xl w-3/4">
+            <p className="text-center font-primary text-xl w-3/4">
               {finalResult?.description}
             </p>
           </motion.div>
@@ -101,7 +101,7 @@ export default function Quiz() {
           <h1 className="font-primary text-xl text-center w-3/4">
             {current.question}
           </h1>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-10 gap-y-14">
             {current.choices.map((choice, id) => (
               <div
                 key={id}
@@ -110,7 +110,7 @@ export default function Quiz() {
               >
                 <img
                   src={choice.img}
-                  className="h-52 object-cover"
+                  className="h-48 object-cover"
                   alt={choice.text}
                 />
                 <h1 className="font-tertiary text-3xl text-center mt-4">
