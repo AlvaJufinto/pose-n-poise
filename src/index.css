@@ -1,3 +1,39 @@
 /** @format */
 
 @import "tailwindcss";
+
+@font-face {
+  font-family: "LeJour";
+  src: url("./assets/font/le-jour-2.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Benedict";
+  src: url("./assets/font/benedict.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-gold {
+  color: #a19986;
+}
+
+.font-primary {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-secondary {
+  font-family: "LeJour";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-tertiary {
+  font-family: "Benedict";
+  font-weight: 400;
+  font-style: normal;
+}
